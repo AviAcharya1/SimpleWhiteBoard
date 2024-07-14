@@ -137,4 +137,3 @@ function snapToGrid(x, y, gridSize = 20) {
     };
 }
 
-// You would need to integrate these functions into your drawing logic
