@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Whiteboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <button id="pencilTool" class="tool active">Pencil</button>
+            <button id="eraserTool" class="tool">Eraser</button>
+            <button id="rectangleTool" class="tool">Rectangle</button>
+            <button id="circleTool" class="tool">Circle</button>
+            <input type="color" id="colorPicker" value="#000000">
+            <input type="range" id="lineWidth" min="1" max="20" value="2">
+        </div>
+        <canvas id="whiteboard"></canvas>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.11.0/dist/tf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
